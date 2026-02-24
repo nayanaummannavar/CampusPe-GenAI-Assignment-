@@ -1,0 +1,24 @@
+
+
+sentence = input("Enter a sentence: ")
+char_count = len(sentence)
+
+
+words = sentence.split()
+word_count = len(words)
+
+print("\n--- String Analysis ---")
+print("Total characters:", char_count)
+print("Total words:", word_count)
+
+print("Uppercase:", sentence.upper())
+print("Lowercase:", sentence.lower())
+print("Title case:", sentence.title())
+
+if word_count > 0:
+    print("First word:", words[0])
+    print("Last word:", words[-1])
+else:
+    print("No words entered")
+
+print("Reversed string:", sentence[::-1])
